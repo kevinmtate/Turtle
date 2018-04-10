@@ -59,3 +59,57 @@ h1 {
     font-size: 2rem;
     line-height: 1.2;
 }
+
+
+/* MAIN CONTENT SECTION */
+
+/* top section */
+.top-section {
+    display: flex;
+    justify-content: center;
+}
+
+.attribute {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 5rem;
+    height: 8rem;
+    padding: 3rem;
+}
+
+.attribute img {
+    width: 3.5rem;
+}
+
+.attribute p {
+    text-align: center;
+}
+
+/* bottom section */
+
+.bottom-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.info {
+    display: inline-block;
+    width: 35%;
+    margin-right: 5%;
+}
+
+.info h3 {
+    background-color: cadetblue;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1.25rem;
+    width: 10rem;
+}
+
+.info p {
+    margin-top: 1rem;
+}
