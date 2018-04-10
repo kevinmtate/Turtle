@@ -9,12 +9,17 @@ html {
     margin: 0 auto;
 }
 
+.mobile {
+    display: none;
+}
+
 /* HEADER */
 
 .header-img {
     background-image: url("../images/glasses-bg.png");
     height: 30rem;
     padding-top: 1rem;
+    background-size: cover;
 }
 
 /* nav */
@@ -112,4 +117,119 @@ h1 {
 
 .info p {
     margin-top: 1rem;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 4rem;
+    background-color: azure;
+    display: flex;
+    align-items: center;
+}
+
+footer img {
+    height: 1.5rem;
+    margin-right: 1rem;
+}
+
+
+/* RESPONSIVE */
+
+/* tablet */
+@media only screen and (max-width: 1024px) {
+    .container {
+        width: 100%;
+    }
+
+    .header-img {
+        padding-top: 0;
+        height: 22rem;
+    }
+
+    .banner {
+        right: 0;
+        margin: 5rem 2rem;
+        padding: 0.75rem 4rem;
+        font-size: 1.33rem;
+    }
+}
+
+/* mobile nav */
+@media only screen and (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: initial;
+    }
+}
+
+/* phones */
+@media only screen and (max-width: 640px) {
+    .header-img {
+        height: 17rem;
+        background-position: 20%;
+    }
+
+    .banner {
+        width: 100%;
+        padding: 1rem 0;
+        margin: 0;
+        margin-top: 9rem;
+    }
+
+    h1 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .top-section {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        flex-direction: column;
+        justify-content: initial;
+        align-items: center;
+    }
+
+    .attribute {
+        padding: 0.77rem;
+        height: initial;
+    }
+
+    .attribute p {
+        font-size: 0.77rem;
+        margin-top: 1rem;
+    }
+
+    .bottom-section {
+        flex-direction: column;
+        justify-content: initial;
+        margin: 0;
+    }
+
+    .info {
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    .info h3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .info p {
+        font-size: 0.77rem;
+        margin: 1rem;
+    }
+
+    footer {
+        justify-content: center;
+    }
+
+    footer span {
+        display: none;
+    }
 }
